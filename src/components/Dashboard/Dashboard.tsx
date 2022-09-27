@@ -3,7 +3,7 @@ import FlatList from 'flatlist-react';
 // react icons
 import { GrAddCircle } from "react-icons/gr"
 import { FaTrashAlt } from "react-icons/fa"
-import { GiNotebook } from "react-icons/Gi"
+import { GiNotebook } from "react-icons/gi"
 
 import { useState, useEffect, ChangeEvent, InvalidEvent, FormEvent } from 'react';
 import styled from "styled-components";
@@ -122,11 +122,11 @@ export function Dashboard() {
 							<strong className='number'>{<p>{tasksChecked} de {tasks.length} concluídas</p>}</strong>
 						</span>
 					</div>
-						<FlatList
-							list={tasks}
-							renderItem={(item: Task) => myTasks(item)}
-							renderWhenEmpty={panelShowContentisEmpty}
-						/>
+					<FlatList
+						list={tasks}
+						renderItem={(item: Task) => myTasks(item)}
+						renderWhenEmpty={panelShowContentisEmpty}
+					/>
 				</div>
 			</div>
 		</ContentDashboard>
