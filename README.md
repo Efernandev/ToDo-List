@@ -6,8 +6,9 @@ a algum tempo como:
 
 - [x] Styled-components 
 - [x] Aos 
+- [x] Flatlist
 
-<div>
-	<img src="src/images/Todo.png" width="500px"/>
-	<img src="src/images/Todo - Empty.png" width="500px"/>
+<div style="display:flex">
+	<img src="src/images/Todo.png" width="400px"/>
+	<img src="src/images/Todo - Empty.png" width="400px"/>
 </div>
