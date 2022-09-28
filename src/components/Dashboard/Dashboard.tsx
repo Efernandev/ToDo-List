@@ -1,5 +1,7 @@
 import FlatList from 'flatlist-react';
-
+// aos lib animatiom
+import AOS from "aos";
+import 'aos/dist/aos.css';
 // react icons
 import { GrAddCircle } from "react-icons/gr"
 import { FaTrashAlt } from "react-icons/fa"
@@ -90,7 +92,11 @@ export function Dashboard() {
 			</PanelEmpty>
 		)
 	}
-
+	useEffect(() => {
+		AOS.init({
+			duration: 800
+		})
+	}, [])
 	return (
 		<ContentDashboard>
 
@@ -105,6 +111,7 @@ export function Dashboard() {
 						value={newTask}
 						onInvalid={handleNewTaskInvalid}
 						required
+						data-aos="fade-right"
 					/>
 					<BtnStyled>
 						Criar
