@@ -27,6 +27,7 @@ export const PanelEmpty = styled.div`
 
 export const ContentDashboard = styled.div`
 	.col {
+		position:relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
