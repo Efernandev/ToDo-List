@@ -32,6 +32,9 @@ export const GlobalStyle = createGlobalStyle`
 		outline:transparent ;
 		box-shadow: 0 0 0 2px var(--green-500);
 	}
+	body {
+		overflow-x:hidden;
+	}
 
 	body,input,textarea,button{
 		font-weight: 400;
